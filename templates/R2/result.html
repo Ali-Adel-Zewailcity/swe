@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Result</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+</head>
+<body>
+    <div align='center'>
+        <table class="table_content" cellpadding=2 border=1>
+            <caption>User's Data</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>{{username}}</th>
+                    <th>{{mail}}</th>
+                    <th>{{age}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

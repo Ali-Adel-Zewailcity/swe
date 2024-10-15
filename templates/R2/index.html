@@ -1,0 +1,32 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Application</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+</head>
+<body>
+    <form action='/submit', method="POST" class="form_content">
+        <div>
+            <label class="my_label" for="user">Username:</label>
+            <input id="user" type="text" name="username" placeholder="Don't enter your real name" required autofocus>
+        </div>
+        <div>
+            <label class="my_label" for="passcode">Password:</label>
+            <input id="passcode" type="password" name="pass" placeholder="from 8 to 30 characters" required min="8" max="30">
+        </div>
+        <div>
+            <label class="my_label" for="email">Email:</label>
+            <input id="email" type="email" name="u_email" required>
+        </div>
+        <div>
+            <label class="my_label" for="Ag">Age:</label>
+            <input class="fix_width" id="Ag" type="number" name="Age" value="18" min="13" max="120" required>
+        </div>
+        <div>
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    </form>   
+</body>
+</html>

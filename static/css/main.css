@@ -1,0 +1,24 @@
+.form_content{
+    align-content: center;
+    text-align: center;
+    font-size: x-large;
+}
+.my_label{
+    position: absolute;
+    left: 300px;
+}
+.fix_width{
+    width: 192px;
+}
+.submit{
+    width: 200px;
+    color: beige;
+    background-color: black;
+}
+.table_content{
+    width: 60%;
+    margin: auto;
+    border: 5px;
+    border-color: rgb(0, 0, 0);
+    padding: 10px;
+}
